@@ -63,7 +63,11 @@ class Solution
                return l;
            }
            
-           return r;
+           else if(r != NULL){
+               return r;
+           }
+           
+           return NULL;
        }
     }
     
