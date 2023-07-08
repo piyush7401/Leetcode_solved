@@ -119,7 +119,7 @@ class Solution
     }
     
     
-    Node* funny(vector<int> & ans,int & i,int n){
+    Node* funny(vector<int> & ans,int & i){
         if(ans[i] == -1){
             return NULL;
         }
@@ -128,22 +128,22 @@ class Solution
             
             i++;
             
-            root -> left = funny(ans,i,n);
+            root -> left = funny(ans,i);
             
             i++;
             
-            root -> right = funny(ans,i,n);
+            root -> right = funny(ans,i);
         }
     }
     
     //Function to deserialize a list and construct the tree.
     Node * deSerialize(vector<int> & ans)
     {
-       int n = ans.size();
+       //int n = ans.size();
        
        int index = 0;
        
-       return funny(ans,index,n);
+       return funny(ans,index);
     }
 
 };
