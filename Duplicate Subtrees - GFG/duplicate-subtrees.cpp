@@ -109,7 +109,7 @@ string fun(Node* root,map<string,int> & m,vector<Node*> & ans){
         if(root == NULL){
             return "#";
         }
-        else if(root -> left == NULL && root -> right == NULL){
+        /*else if(root -> left == NULL && root -> right == NULL){
 
             string s = to_string(root -> data);
 
@@ -120,7 +120,7 @@ string fun(Node* root,map<string,int> & m,vector<Node*> & ans){
             }
 
             return s;
-        }
+        }*/
         else{
             string s;
 
